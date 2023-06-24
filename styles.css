@@ -1,0 +1,347 @@
+@font-face {
+    font-family: 'Netflix';
+    font-weight: 400;
+    src: url('assets/fonts/NetflixSansLight.ttf');
+}
+@font-face {
+    font-family: 'Netflix';
+    font-weight: 500;
+    src: url('assets/fonts/NetflixSansRegular.ttf');
+}
+@font-face {
+    font-family: 'Netflix';
+    font-weight: 600;
+    src: url('assets/fonts/NetflixSansMedium.ttf');
+}
+@font-face {
+    font-family: 'Netflix';
+    font-weight: 700;
+    src: url('assets/fonts/NetflixSansBold.ttf');
+}
+
+*{
+    font-family: 'Netflix', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    margin-left: 20px;
+    font-size: 20px;
+}
+/* text */
+.text-xl{font-size: 32px;} .text-lg{font-size: 24px;} .text-md{font-size: 18px;}
+.text-gray{color: #737278;} .text-white{color: #FFFF;} .text-black{color: black;}
+.text-gray-dark{color: #4a494a}
+.uppercase{text-transform: uppercase;}
+/* layout */
+.mb-1{margin-bottom: 10px;} .mb-2{margin-bottom: 20px;} .mb-3{margin-bottom: 30px;}
+.mt-1{margin-top: 10px;} .mt-2{margin-top: 20px;} .mt-3{margin-top: 30px;}
+
+.d-flex{display: flex;}
+.d-block{display: block;}
+.w-100{width: 100%;} .w-75{width: 75%;} .w-50{width: 50%;}.w-33{width: calc(100% / 3);} .w-25{width: 25%;}
+.non-style-list{
+    list-style: none;
+    margin-left: 0 !important;
+}
+.subtitle{
+    display: inline-block;
+    width: auto;
+    padding: 3px 10px;
+    background-color: #8fc040;
+    color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    padding-left: 60px;
+    box-shadow: gray 0px 5px 15px;
+}
+.header__logo{
+    height: 60px;
+}
+.principal{
+    width: 100%;
+    background: url('assets/background/background-1-2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.principal__info{
+    padding: 60px;
+    padding-right: 0;
+}
+.principal__info__title{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.principal__info__title small{
+    font-size: 33px;
+}
+.principal__info__p{
+    padding: 10px 14px;
+    background-color: #8fc040;
+    color: white;
+    border-radius: 10px 15px;
+    font-size: 18px;
+    max-width: 512px;
+    width: 100%;
+}
+
+.principal__info__requisitos-logo-brilla{
+    display: flex;
+}
+.principal__info_requisitos{
+    max-width: 420px;
+}
+.principal__info__logo-brilla{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+.principal__info__logo-brilla img{
+    width: 130px;
+}
+.principal__info__solicitar-credito{
+    display: flex;
+    gap: 60px;
+}
+.principal__info__solicitar-credito__tiempo-credito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+.principal__info__solicitar-credito__tiempo-credito .cronometro{
+    display: flex;
+    justify-content: center;
+}
+.principal__info__solicitar-credito__tiempo-credito .cronometro img{
+    width: 50px;
+}
+.principal__info__solicitar-credito__tiempo-credito .tucredito{
+    color: #4a494a;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.principal__info__solicitar-credito__tiempo-credito .minutos{
+    display: block;
+    width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #105292;
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 8px;
+    border: 3px solid #105292
+}
+.principal__info__solicitar-credito__whatsapp-button{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    flex-grow: 1;
+}
+.principal__info__solicitar-credito__whatsapp-button img{
+    cursor: pointer;
+    width: 300px;
+}
+.principal___images{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.principal___images__men{
+    display: flex;
+    align-items: end;
+    height: 100%;
+}
+.principal__images__men img{
+    width: 420px;
+    transform: rotateY(180deg);
+}
+
+.benefits-questions{
+    display: flex;
+    background: url('assets/background/background-2.jpg');
+    background-size: cover;
+    padding: 60px;
+}
+.benefits-questions .questions ul li{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.benefits-questions .benefits ul li{
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1300px){ /* lg */
+    .w-lg-100{
+        width: 100%;
+    }
+    .w-lg-75{
+        width: 75%;
+    }
+    .w-lg-50{
+        width: 50%;
+    }
+    .w-lg-33{
+        width: calc(100% / 3);
+    }
+    .w-lg-25{
+        width: 25%;
+    }
+    .principal__info__title{
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 36px;
+        text-transform: uppercase;
+    }
+    .principal__info__title small{
+        font-size: 28px;
+    }
+    .principal__info__solicitar-credito{
+        display: flex;
+        gap: 20px;
+    }
+    .principal__info__solicitar-credito__whatsapp-button img{
+        cursor: pointer;
+        width: 250px;
+    }
+    .principal__info__solicitar-credito__tiempo-credito .cronometro img{
+        width: 40px;
+    }
+    .principal__info__solicitar-credito__tiempo-credito .tucredito{
+        color: #4a494a;
+        font-size: 17px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .principal__info__solicitar-credito__tiempo-credito .minutos{
+        display: block;
+        width: fit-content;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: #105292;
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+        border-radius: 8px;
+        border: 3px solid #105292
+    }
+}
+
+@media (max-width: 1000px) { /* md */
+    .d-md-none{
+        display: none;
+    }
+    .w-md-100{
+        width: 100%;
+    }
+    .w-md-75{
+        width: 75%;
+    }
+    .w-md-50{
+        width: 50%;
+    }
+    .w-md-33{
+        width: calc(100% / 3);
+    }
+    .w-md-25{
+        width: 25%;
+    }
+    .principal__info__title{
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 36px;
+        text-transform: uppercase;
+    }
+    .principal__info{
+        padding: 30px;
+        padding-right: 30px;
+        padding-top: 60px;
+        
+    }
+    .benefits-questions{
+        display: block;
+        padding: 30px;
+    }
+    .benefits{
+        width: 100%;
+    }
+    .questions{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) { /* sm */
+    .subtitle{
+        font-size: 18px;
+    }
+    .principal__info{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .principal__info__title{
+        width: 100%;
+        text-align: center;
+        font-size: 45px;
+    }
+    .principal__info__title small{
+        font-size: 26px;
+    }
+    .principal__info__p{
+        max-width: none;
+        width: 100%;
+    }
+    .principal__info__requisitos-logo-brilla{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .principal__info_requisitos{
+        width: 100%;
+    }
+    .principal__info__solicitar-credito{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 460px) { /* xsm */
+    .principal__info{
+        padding: 15px;
+    }
+    .principal__info__title{
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        line-height: 20px;
+    }
+    .principal__info__title small{
+        font-size: 17px;
+    }
+    .principal__info__p{
+        font-size: 16px;
+    }
+    .benefits-questions{
+        padding: 15px;
+    }
+    ul{
+        font-size: 16px;
+    }
+}
